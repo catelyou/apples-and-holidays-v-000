@@ -66,8 +66,9 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.captialize! << ":"
       holidays.each do |holiday, items|
         items.join(", ")
+        holiday.to_s.split(" ").collect{|list| list.captialize}.join(" ") << ":"
     end
-  end 
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
