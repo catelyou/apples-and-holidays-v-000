@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
+
 
 end
 
@@ -73,7 +73,7 @@ def all_holidays_with_bbq(holiday_hash)
     holidays.collect do |holiday, items|
       if items.include?("BBQ")
         holiday
-      end 
-    end 
-  end.flatten
+      end
+    end
+  end.flatten.compact
 end
